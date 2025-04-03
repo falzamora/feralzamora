@@ -34,6 +34,30 @@
             animation: fadeIn 2s;
         }
         
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--neon-blue);
+            box-shadow: var(--glow);
+            margin-bottom: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .profile-pic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-pink);
+        }
+        
         h1 {
             color: var(--neon-blue);
             text-shadow: var(--glow);
@@ -43,7 +67,8 @@
         
         .subtitle {
             color: var(--neon-pink);
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            margin-top: 0;
         }
         
         section {
@@ -105,15 +130,20 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="neon-text">¡BIENVENIDO/A A MI PORTAFOLIO!</h1>
-            <p class="subtitle">FERNANDO ALZAMORA | Ingeniero de Sistemas</p>
+            <div class="profile">
+                <!-- Reemplaza "foto.jpg" con el nombre de tu archivo de imagen -->
+                <img src="foto.jpg" alt="Foto de Fernando Alzamora" class="profile-pic">
+                <h1 class="neon-text">¡BIENVENIDO/A A MI PORTAFOLIO!</h1>
+                <p class="subtitle">FERNANDO ALZAMORA PALOMINO</p>
+                <p class="subtitle">Ingeniero de Sistemas | Innovación Tecnológica</p>
+            </div>
         </header>
         
         <section id="contacto">
             <h2>📌 DATOS DE CONTACTO</h2>
             <div class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:44956944@continental.edu.pe">44956944@continental.edu.pe</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tuperfil" target="_blank">linkedin.com/in/tuperfil</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tuperfil" target="_blank">www.linkedin.com/in/fer-alzamora-183022333</a></p>
                 <p><strong>GitHub:</strong> <a href="https://github.com/feralzamora" target="_blank">github.com/feralzamora</a></p>
                 <p><strong>Teléfono:</strong> <a href="tel:+51983435968">+51 983 435 968</a></p>
             </div>
@@ -128,13 +158,13 @@
             </p>
             <p>
                 Actualmente trabajo en el Hospital Minsa de Moyobamba donde me desempeño como Técnico en Computación e Informática. 
-                Mi objetivo es ser un gran profesional.
+                Mi objetivo es ser un gran profesional y contribuir al desarrollo tecnológico del país.
             </p>
         </section>
         
         <footer>
             <p class="neon-text">🚀 ¡GRACIAS POR VISITAR MI PORTAFOLIO! 🚀</p>
-            <p>© 2025 Fernando Alzamora | Todos los derechos reservados</p>
+            <p>© 2025 Fernando Alzamora Palomino | Todos los derechos reservados</p>
         </footer>
     </div>
 </body>
